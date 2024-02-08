@@ -1,0 +1,16 @@
+#! /bin/bash
+# for running: sh <name>.sh
+# this looks like an Xorg feature set. do check out
+# status bar update
+while true; do
+   xsetroot -name "$(/usr/bin/date) | $(cat /sys/class/power_supply/BAT1/capacity)%"
+       # not all machines call their battery BAT 1. use ls /sys/class/power_supply
+   sleep 1m    # Update time every minute
+done & # the & is to make it run in the background
+
+# set wallpaper. use --daemon to have this running right after logging in a session
+xwallpaper --zoom /path/to/background.png
+
+# change brightness 
+# echo 42 > /sys/class/backlight/acpi_video0/brightness
+# check your own file system to directly change this
