@@ -1,0 +1,28 @@
+# Neofetch output, as of 14/2/2024
+# Kernel: 6.7.4-arch1-1
+# Shell: bash 5.2.26
+# Terminal: alacritty
+# CPU: AMD Ryzen 7 6800H with Radeon Graphics (16) @ 4.785GHz
+# GPU: NVIDIA GeForce RTX 3060 Mobile / Max-Q + AMD ATI Radeon 680M
+# Essentials
+
+- Wine
+- Steam + proton???
+- gvfs: Knowing that my file manager is Thunar, having gvfs is a great utility. Offers like trash can, some distinction for folders like Downloads, Pictures, ... albeit I will not feel it it Hyprland
+- Nvchads: Check their website -> download. Simple UI + binding improvement for this bitchy editor.
+
+==> Recommend to make a script. Purely bash-pilled. In case Wayland/Xorgs sugma.
+#
+
+Screenshot taker: yay -S swayshot
+- Will pull grim and slurp as dependencies, and compile. Huh how bout i get the packages from git?
+- Alternatives: Flameshot. Be not discouraged by terminal-based. just type flameshot gui
+Media player: yay -S celluloid
+- Quite nice and powerful enough for novice user -> powerhouse. There might be other better choices like ffmpeg, and something n curses upgraded (??ncp??)
+
+DSP: unknown
+- If Wayland/Hyprland is your choice, then easyeffects might not be it. (i will reconfig and daily this to verify)
+- Else, easyeffects is the GOAT. Do remember it is only the GUI, the actual computing is Pipewire and lsp-plugins
+==> yay -S pipewire lsp-plugins easyeffects
+
+
