@@ -1,0 +1,19 @@
+#!bin/sh
+
+ls /sys/class/backlight/???
+
+# at this point the answers might be different. simply machine-dependent
+# for example, mine uses an AMD CPU, so amdgpu_bl1. specifically the ATI graphic card in your machine that is responsible
+# some other names for this is intel_backlight or acpi_video0
+
+ls /sys/class/backlight/amdgpu_bl1
+
+# should give you names of many folders. what we care about the most is "brightness" ("actual_brightness" confuses me)
+
+cat /sys/class/baclight/amdgpu_bl1/max_brightness
+
+# gives the maximum brightness that your screen can produce. usually 15 or 100.
+
+su echo 5 > /sys/class/baclight/amdgpu_bl1/brightness
+
+# brightness should be changed, if not try with "actual_brightness" 
