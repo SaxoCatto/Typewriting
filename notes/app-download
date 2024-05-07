@@ -1,64 +1,60 @@
 # Neofetch output, as of 14/2/2024
-# Kernel: 6.7.4-arch1-1
-# Shell: bash 5.2.26
-# Terminal: alacritty
-# CPU: AMD Ryzen 7 6800H with Radeon Graphics (16) @ 4.785GHz
-# GPU: NVIDIA GeForce RTX 3060 Mobile / Max-Q + AMD ATI Radeon 680M
+## Kernel: 6.7.4-arch1-1
+## Shell: bash 5.2.26
+## Terminal: kitty
+
 # Essentials
 
 - Wine
-- Steam + proton???
-- gvfs: Knowing that my file manager is Thunar, having gvfs is a great utility. Offers like trash can, some distinction for folders like Downloads, Pictures, ... albeit I will not feel it it Hyprland
+- Steam + proton (can't remember full name)
+- gvfs: Knowing that my file manager is Thunar, having gvfs is a great utility. Offers things like trash can, some distinction for folders like Downloads, Pictures, ... albeit I will not feel it it Hyprland
 - Nvchads: Check their website -> download. Simple UI + binding improvement for this bitchy editor.
 
 ==> Recommend to make a script. Purely bash-pilled. In case Wayland/Xorgs sugma.
-# Nice to haves
+# Nice to haves: Prefer to write own script. If not I will write dependencies for some specific DE/WM. My bias is for Hyprland. As for dwm, I will write a script for all
 
-Emote manager: 
-- Cross DE, pulls many python dependencies. Use this to have understanding of emotes, and shove some into your status bar.
-
-Screenshot taker: hyprshot in https://github.com/Gustash/Hyprshot
+## Screenshot taker: hyprshot in https://github.com/Gustash/Hyprshot
 - Will pull grim and slurp as dependencies, and compile. Huh how bout i get the packages from git?
 - Alternatives: 
 + Flameshot. Be not discouraged by terminal-based. just type flameshot gui
 + ShareX: doesnt work on my Hyprland session. But for others like Windows, then ez recorder too
 + Swayshot: doesn't seem to work in my config. Alas, try again with hyprshot
 
-Media player: yay -S celluloid
+## Media player: yay -S celluloid
 - Quite nice and powerful enough for novice user -> powerhouse. There might be other better choices like ffmpeg, and something n curses upgraded (??ncp??). Sucks for displaying images though (use imv for that)
 
-DSP: unknown
+## DSP: unknown
 - If Wayland/Hyprland is your choice, then easyeffects might not be it. (i will reconfig and daily this to verify). NVM I FIXED IT LMAO https://www.reddit.com/r/archlinux/comments/17v7a4e/setting_up_pipewire_on_hyprland/
 - Else, easyeffects is the GOAT. Do remember it is only the GUI, the actual computing is Pipewire and lsp-plugins
 ==> yay -S pipewire lsp-plugins easyeffects wireplumber pipewire-pulse
 
-Language:
+## Language:
 - fcixt5: great in general. but for my usecase, a bit buggy (when Segmentation Fault). my fix is that use exec-once in my hypr.conf
 (update: the fcitx5 can have VN and US input, rmb to use Unikey instead of Keyboard - Vietnameses)
 - ibus-bamboo: ez installation and use in Gnome and KDE?. Still, Light said I tricked him for doing this (skill issue). There should be one Github link to show how to. Or just AUR it.
 
-Notification:
+## Notification:
 - dunst: im just following orders. i havent have it all set up. It is quite lightweight so why not: https://wiki.archlinux.org/title/Dunst
 
-Zip extrack:
+## Zip extract:
 - File roller (aka archive manager): just works for all. yay -S file-roller
 
-Circuit design:
-- Ltspice: legacy. Just works if want to check schematics
-- Kicad: yay -S kicad. Other than not as annoying and proprietary like Altium, Kicad can split itself to multiple apps for other fuctionalities 
+## Circuit design:
+- Ltspice: legacy. Just works if want to check schematics. But it keeps having newer version than that of AUR???
+- Kicad: yay -S kicad. Other than not as annoying and proprietary like Altium, Kicad can split itself to multiple apps for other fuctionalities.
 
-Content creation:
-- Inkspace: recommended? vector based
-- Kdenlive: video editor. Dont know why cant I do it with Davinci but okay
-- Audacity: for audio creation. good, but might have some problem from the makers instead of the app. so do use yay -S instead of downloading directly from them
+## Content creation:
+- Inkspace: recommended? vector based.
+- Davinci: final video editor. But Im too bad to set it up.
+- Audacity: for audio creation. good, but might have some problem from the makers instead of the app. so do use yay -S instead of downloading directly from them.
 
-Domaphone, Odin:
+## Domaphone, Odin:
 - To unlock root for phones. For Samsung phones at least. Not the only but works for Samsung S9
 https://docs.google.com/document/d/1WnANNEa4rI366hpcI5CCjqIXXVsbT7YXiaf-ri1hkSg/edit
 
-Freegate:
+## Freegate:
 - IP faker. https://www.youtube.com/watch?v=RkZl7FBipXA he recommends it
 
-wf-recorder:
+## wf-recorder:
 - To record screens. Why not OBS? kinda heavy. i only needed this for recording my progress
 https://www.reddit.com/r/hyprland/comments/172ohyh/how_do_you_screen_record_on_hyprland/
